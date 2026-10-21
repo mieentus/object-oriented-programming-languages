@@ -33,7 +33,7 @@ int main() {
 
     std::cout << "Is it a palindrome?" << std::endl;
     std::cout << "manual check: " << is_palindrome_manual(s) << std::endl;
-    std::cout << "reverse check: " << is_palindrome_reverse(s) << std::endl;
+    std::cout << "reverse() check: " << is_palindrome_reverse(s) << std::endl;
 
     return 0;
 }

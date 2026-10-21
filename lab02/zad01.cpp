@@ -29,6 +29,7 @@ int main() {
 
     if (n_rows <= 0 or n_cols <= 0) {
         std::cout << "The numbers must be greater than 0\n";
+        return;
     }
 
     std::vector<std::vector<int>> matrix (n_rows, std::vector<int>(n_cols));
