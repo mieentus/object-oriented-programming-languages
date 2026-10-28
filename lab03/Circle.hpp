@@ -5,12 +5,16 @@
 class Circle {
 private:
     double *m_radius;
-public
+public:
     Point center;
 
     Circle(double r) {
-        radius = new double;
+        m_radius = new double;
         setRadius(r);
+    }
+
+    double getRadius() {
+        return *m_radius;
     }
 
     void setRadius(double r) {
@@ -18,11 +22,7 @@ public
             std::cout << "Radius must be greater than 0" << std::endl;
             return;
         }
-        *m_radius = r
-    }
-
-    double getRadius() {
-        return *m_radius;
+        *m_radius = r;
     }
 
     double area() {
@@ -30,6 +30,6 @@ public
     }
 
     ~Circle() {
-        delete radius;
+        delete m_radius;
     }
 };

@@ -4,6 +4,7 @@
 class Point {
 public:
     double x, y;
+    Point() {}
     Point(double new_x, double new_y) {
         x = new_x;
         y = new_y;

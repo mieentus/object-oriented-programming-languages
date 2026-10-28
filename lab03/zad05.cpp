@@ -1,11 +1,17 @@
 #include <iostream>
 #include "Circle.hpp"
-#include "Point.hpp"
 
 int main() {
 
     Circle cir(2.0);
+
+    cir.center.x = 1.0;
+    cir.center.y = 2.5;
+
+    std::cout << cir.getRadius() << std::endl;
     
-    Point cir_center
+    cir.setRadius(-1);
+
+    std::cout << cir.area() << std::endl;
 
 }
